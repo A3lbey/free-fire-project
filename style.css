@@ -1,11 +1,13 @@
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+
 .sidebar{
   position: fixed;
   left: 0;
@@ -127,7 +129,7 @@
   transition: all 0.4s ease;
   background: #b6c9cc;
 }
-.sidebar li a:hover{
+.active,.sidebar li a:hover{
   background: #FFF;
 }
 .sidebar li a .links_name{
@@ -680,10 +682,30 @@ form.sign-in-form {
 }
 .Tournament ul li {
   display: inline-flex;
-  padding: 20px;
+  padding: 20px; 
+}
+.Tournament li a{
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+  font-family: 'Creepster', cursive;
+  font-size: 25px;
+}
+.Tournament li a:hover{
+  color: rgb(255, 255, 255);
+  transition: all .3s ease 0s;
 
 }
-.Tournament ul li a{
+.list{
+  height: 800px;
+  width: 1000px;
+  background-color: #333836;
+  margin-left:30%;
+  border-radius:40px;
   
 }
+.Matches{
+  height: 50px;
+  width: 60%;
+  background-color: #4481eb;
   
+}
