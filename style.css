@@ -666,6 +666,24 @@ form.sign-in-form {
     left: 50%;
   }
 }
-
+.Tournament{
+  margin-left:40%;
+  margin-top: 10%;
  
+
+}
+.Tournament ul{
+  background-color: #89f7f3;
+  width: 50%;
+  text-align: center;
+  border-radius: 30px;
+}
+.Tournament ul li {
+  display: inline-flex;
+  padding: 20px;
+
+}
+.Tournament ul li a{
+  
+}
   
