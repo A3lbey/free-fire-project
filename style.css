@@ -1043,8 +1043,6 @@ textarea.input {
 .Tournament{
   margin-left:40%;
   margin-top: 10%;
- 
-
 }
 .Tournament ul{
   background-color: #89f7f3;
@@ -1078,9 +1076,10 @@ textarea.input {
 .Matches{
   height: 80px;
   width: 60%;
-  background-color: #4481eb;
-  margin-top: 50px;
-  margin-left: 15%;
+  background-color: #6ac8ff;
+  margin-top: 20px;
+  margin-left: 25%;
   font-size: 30px;
+  
   
 }
