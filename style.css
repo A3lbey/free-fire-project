@@ -1017,11 +1017,6 @@ textarea.input {
   .social-media p {
     font-size: 0.8rem;
   }
-
-  .title {
-    font-size: 1.15rem;
-  }
-
   .social-icons a {
     width: 30px;
     height: 30px;
@@ -1049,7 +1044,7 @@ textarea.input {
   margin-top: 5%;
   width: 65%;
   height: 60px;
-  background: #60cfe0;
+  background: #40e9e1af;
   line-height: 55px;
   font-family: 'Bungee Shade', cursive;
   color: #222726;
@@ -1057,7 +1052,7 @@ textarea.input {
   
 }
 .wrapper{
-  max-width: 700px;
+  max-width: 60%;
   width: 100%;
   margin: 200px auto;
   padding: 25px 30px 30px 30px;
@@ -1133,7 +1128,7 @@ input[type="radio"]{
 }
 section .content{
   display: none;
-  background: #fff;
+  background: rgb(223, 223, 223);
 }
 #home:checked ~ section .content-1,
 #blog:checked ~ section .content-2,
@@ -1142,11 +1137,43 @@ section .content{
 #about:checked ~ section .content-5{
   display: block;
 }
-section .content .title{
+section .content{
   font-size: 21px;
   font-weight: 500;
   margin: 30px 0 10px 0;
 }
 section .content p{
 text-align: justify;
+}
+
+.c1{
+  width: 80%;
+  margin-left:100px;
+  margin-bottom: 0%;
+   
+}
+.cbtn{
+  width: 150px;
+  background-color: #40e9e0e8;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 45%;
+  
+}
+.cbtn:hover {
+  background-color: rgb(37, 221, 206);
+  color: rgb(229, 226, 226);
+}
+.c1hr{
+  height: 10px;
+  border-radius: 50px;
+  
 }
