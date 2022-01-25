@@ -1,6 +1,7 @@
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -1039,47 +1040,100 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 }
-
-.Tournament{
-  margin-left:40%;
-  margin-top: 10%;
+::selection{
+  background: rgba(23,162,184,0.3);
 }
-.Tournament ul{
-  background-color: #89f7f3;
-  width: 50%;
-  text-align: center;
-  border-radius: 30px;
+.wrapper{
+  max-width: 700px;
+  width: 100%;
+  margin: 200px auto;
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
-.Tournament ul li {
-  display: inline-flex;
-  padding: 20px;
-}
-.Tournament li a{
-  text-decoration: none;
-  color: rgb(75, 75, 75);
-  font-family: 'Creepster', cursive;
-  font-size: 25px;
-}
-.Tournament li a:hover{
-  color: rgb(255, 255, 255);
-  transition: all .3s ease 0s;
-
-}
-.list{
-  height: 800px;
-  width: 1000px;
-  background-color: #333836;
-  margin-left:30%;
-  border-radius:40px;
-  
-}
-.Matches{
-  height: 80px;
-  width: 60%;
-  background-color: #6ac8ff;
-  margin-top: 20px;
-  margin-left: 25%;
+.wrapper header{
   font-size: 30px;
-  
-  
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.wrapper nav{
+  position: relative;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.wrapper nav label{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #17a2b8;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.wrapper nav label:hover{
+  background: rgba(23,162,184,0.3);
+}
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+  #about:checked ~ nav label.about{
+  color: #fff;
+}
+nav label i{
+  padding-right: 7px;
+}
+nav .slider{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: #17a2b8;
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#blog:checked ~ nav .slider{
+  left: 20%;
+}
+#code:checked ~ nav .slider{
+  left: 40%;
+}
+#help:checked ~ nav .slider{
+  left: 60%;
+}
+#about:checked ~ nav .slider{
+  left: 80%;
+}
+section .content{
+  display: none;
+  background: #fff;
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5{
+  display: block;
+}
+section .content .title{
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}
+section .content p{
+text-align: justify;
 }
